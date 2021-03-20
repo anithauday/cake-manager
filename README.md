@@ -61,9 +61,9 @@
 
 ## Running Integration Tests
 
-- **cake-manager-integration-tests**
+- **cake-manager-integration-test**
 
-  - Open a terminal and navigate to `cake-manager/cake-manager-integration-tests` folder
+  - Open a terminal and navigate to `cake-manager/cake-manager-integration-test` folder
 
   - Run the following `Maven` command to start the application
     ```

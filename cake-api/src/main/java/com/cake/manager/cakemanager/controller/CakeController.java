@@ -7,6 +7,7 @@ import com.cake.manager.cakemanager.service.FileStorageService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -29,6 +30,7 @@ import static com.cake.manager.cakemanager.configuration.SwaggerConfig.BEARER_KE
 @RestController
 @RequestMapping ( "/api/v1/" )
 @RequiredArgsConstructor
+@Slf4j
 public class CakeController
 {
 
@@ -61,18 +63,16 @@ public class CakeController
         String contentType = null;
         try
         {
-            contentType = request
-                .getServletContext( )
-                .getMimeType( resource
+            contentType = request.getServletContext( )
+                                  .getMimeType( resource
                                   .getFile( )
                                   .getAbsolutePath( ) );
         }
         catch ( IOException ex )
         {
-
+           log.error( "File load error",ex);
         }
 
-        // Fallback to the default content type if type could not be determined
         if ( contentType == null )
         {
             contentType = "application/octet-stream";
