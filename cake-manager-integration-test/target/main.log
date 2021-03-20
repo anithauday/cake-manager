@@ -1,0 +1,177 @@
+21:05:10.616 request:
+1 > POST http://localhost:8080/auth/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 37
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"username":"user","password":"user"}
+
+21:05:10.729 response time in milliseconds: 110.72
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTAsImlhdCI6MTYxNjI3NDMxMCwianRpIjoiM2RhMGM3NGQtNjgyNy00ZDZkLThiYjItZTg2ZDBiOWE2MDNlIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.N0b1H9e6hiWKlrL-DhcLM1V8f4t8whmxhSSqkc4IRlNG40PRe94Zbg88BxjSd3wzJ_jSHeTgpxYIn-h69-Eu1A"}
+
+21:05:10.741 request:
+2 > GET http://localhost:8080/api/v1/cakes
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTAsImlhdCI6MTYxNjI3NDMxMCwianRpIjoiM2RhMGM3NGQtNjgyNy00ZDZkLThiYjItZTg2ZDBiOWE2MDNlIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.N0b1H9e6hiWKlrL-DhcLM1V8f4t8whmxhSSqkc4IRlNG40PRe94Zbg88BxjSd3wzJ_jSHeTgpxYIn-h69-Eu1A
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+
+21:05:10.754 response time in milliseconds: 13.01
+2 < 200
+2 < Accept-Ranges: bytes
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Disposition: attachment; filename="cakes.json"
+2 < Content-Length: 251
+2 < Content-Type: application/octet-stream
+2 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+2 < Expires: 0
+2 < Keep-Alive: timeout=60
+2 < Pragma: no-cache
+2 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+21:05:10.851 request:
+1 > POST http://localhost:8080/auth/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 37
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"username":"user","password":"user"}
+
+21:05:10.961 response time in milliseconds: 110.01
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTAsImlhdCI6MTYxNjI3NDMxMCwianRpIjoiOWYxOTIwNzItOGY4My00MTg1LTg5MTItNzMwZDJmMzBmMzIxIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.sf4NSRBqVqKSnW0L_q1-GEuDFX1a2Se64DYTywlfbQpW7dCOxd_TclbxlnmPYyEOhBuGNOqz6IAcWYOVRMy3Eg"}
+
+21:05:10.968 request:
+2 > POST http://localhost:8080/api/v1/cake
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTAsImlhdCI6MTYxNjI3NDMxMCwianRpIjoiOWYxOTIwNzItOGY4My00MTg1LTg5MTItNzMwZDJmMzBmMzIxIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.sf4NSRBqVqKSnW0L_q1-GEuDFX1a2Se64DYTywlfbQpW7dCOxd_TclbxlnmPYyEOhBuGNOqz6IAcWYOVRMy3Eg
+2 > Connection: Keep-Alive
+2 > Content-Length: 60
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"title":"myTitle","description":"myDesc","image":"myimage"}
+
+21:05:10.988 response time in milliseconds: 20.04
+2 < 201
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Length: 0
+2 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+2 < Expires: 0
+2 < Keep-Alive: timeout=60
+2 < Pragma: no-cache
+2 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+21:05:11.013 request:
+1 > POST http://localhost:8080/auth/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 37
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"username":"user","password":"user"}
+
+21:05:11.111 response time in milliseconds: 98.00
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTEsImlhdCI6MTYxNjI3NDMxMSwianRpIjoiNmI0NzEzZGUtOWIxYS00YjNkLWIwYWItMzUyMTI4YjFkY2NhIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.FFvDsE3aE8xNS8uYJxfdZPUx47QZ6gKMlIg3Lot8Ofs_zvx7A10d9FyvXY3utyI3pi-CAYGT8IYd3fZVC0ZGsA"}
+
+21:05:11.115 request:
+2 > POST http://localhost:8080/api/v1/cake
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTEsImlhdCI6MTYxNjI3NDMxMSwianRpIjoiNmI0NzEzZGUtOWIxYS00YjNkLWIwYWItMzUyMTI4YjFkY2NhIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.FFvDsE3aE8xNS8uYJxfdZPUx47QZ6gKMlIg3Lot8Ofs_zvx7A10d9FyvXY3utyI3pi-CAYGT8IYd3fZVC0ZGsA
+2 > Connection: Keep-Alive
+2 > Content-Length: 60
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+{"title":"myTitle","description":"myDesc","image":"myimage"}
+
+21:05:11.147 response time in milliseconds: 31.33
+2 < 201
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Length: 0
+2 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+2 < Expires: 0
+2 < Keep-Alive: timeout=60
+2 < Pragma: no-cache
+2 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+21:05:11.152 request:
+3 > GET http://localhost:8080/api/v1/
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTYyNzQ5MTEsImlhdCI6MTYxNjI3NDMxMSwianRpIjoiNmI0NzEzZGUtOWIxYS00YjNkLWIwYWItMzUyMTI4YjFkY2NhIiwiaXNzIjoiY2FrZS1hcGkiLCJhdWQiOiJjYWtlLW1hbmFnZXIiLCJzdWIiOiJ1c2VyIiwicm9sIjpbIlVTRVIiXSwibmFtZSI6IlVzZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQG15Y29tcGFueS5jb20ifQ.FFvDsE3aE8xNS8uYJxfdZPUx47QZ6gKMlIg3Lot8Ofs_zvx7A10d9FyvXY3utyI3pi-CAYGT8IYd3fZVC0ZGsA
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_271)
+
+21:05:11.173 response time in milliseconds: 20.48
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: application/json
+3 < Date: Sat, 20 Mar 2021 21:05:10 GMT
+3 < Expires: 0
+3 < Keep-Alive: timeout=60
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[{"title":"myTitle","description":"myDesc","image":"myimage","createdAt":"2021-03-20T21:04:21.075Z"},{"title":"myTitle","description":"myDesc","image":"myimage","createdAt":"2021-03-20T21:04:21.268Z"},{"title":"myTitle","description":"myDesc","image":"myimage","createdAt":"2021-03-20T21:04:46.73Z"},{"title":"myTitle","description":"myDesc","image":"myimage","createdAt":"2021-03-20T21:04:46.894Z"},{"title":"myTitle","description":"myDesc","image":"myimage","createdAt":"2021-03-20T21:05:10.983Z"},{"title":"myTitle","description":"myDesc","image":"myimage","createdAt":"2021-03-20T21:05:11.137Z"}]
+
