@@ -1,9 +1,12 @@
 language: java
 jobs:
   include:
-    - stage: test
+    - stage: Package 
       before_script: cd cake-api
-      script : mvn clean install
-    - stage: dockerize
-      before_script: cd .. 
+      script : mvn clean package
+    - stage: Run Backend Apps  
+      before_script: cd cake-api
       script: docker-compose up --build -d
+    - stage: Integration Test
+      before_script: cd cake-manager-integration-test
+      script: mvn clean test   
