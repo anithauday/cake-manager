@@ -3,7 +3,7 @@ jobs:
   include:
     - stage: Package 
       before_script: cd cake-api
-      script : mvn clean package
+      script : mvn clean install
     - stage: Run Backend Apps  
       before_script: cd cake-api
       script: docker-compose up --build -d
