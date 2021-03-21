@@ -11,7 +11,9 @@ services:
       - MYSQL_USER=root
     healthcheck:
       test: "mysqladmin ping -u root -p$${MYSQL_ROOT_PASSWORD}"
-      start_period: 30s
+      interval: 20s
+      timeout: 30s
+      retries: 3
 
   cake-service:
     image: cake-service
