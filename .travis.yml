@@ -1,3 +1,10 @@
 language: java
-before_script: cd cake-api
-script: mvn  clean  install 
+
+jobs:
+  include:
+    - stage: build 
+      before_script: cd cake-api
+      script: mvn  clean  install 
+   - stage: dockerize  
+      before_script: cd .. 
+      script: docker-compose  up  --build -d    
