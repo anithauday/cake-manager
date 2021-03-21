@@ -118,3 +118,5 @@
   ```
 
 
+  [![Build Status](https://travis-ci.org/baranipek/cake-manager.svg?branch=master)](https://travis-ci.org/baranipek/cake-manager)
+
