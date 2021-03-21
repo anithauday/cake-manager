@@ -10,7 +10,5 @@ jobs:
       script :
        - mvn clean install
        - docker-compose up --build -d
-       
-    - stage: Integration Test
-      before_script: cd cake-manager-integration-test
-      script: mvn clean test   
+      after_script: cd cake-manager-integration-test 
+      script: mvn clean test  
