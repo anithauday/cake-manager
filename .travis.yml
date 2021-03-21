@@ -5,7 +5,7 @@ jobs:
       before_script: cd cake-api
       script : mvn clean install
 
-    - stage: Run Backend Apps  
+    - stage: Run Backend Apps Integration Tests 
       before_script: cd cake-api 
       script :
        - mvn clean install
