@@ -78,11 +78,6 @@
 
 > **Note:** the credentials shown in the table are the ones already pre-defined. 
 
-## Demo
-
-- The gif below shows a `user` loging in
-
-  ![user-login](images/user-login.gif)
 
 
 ## Testing cake-api Endpoints
