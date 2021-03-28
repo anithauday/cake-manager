@@ -34,7 +34,6 @@ public class DatabaseInitializer
     }
 
     private static final List<User> USERS = Arrays.asList(
-            new User( "admin", "admin", "Admin", "admin@mycompany.com", WebSecurityConfig.ADMIN),
             new User("user", "user", "User", "user@mycompany.com", WebSecurityConfig.USER)
                                                          );
 

@@ -36,10 +36,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/api/orders").hasAnyAuthority(ADMIN, USER)
-                .antMatchers(HttpMethod.GET, "/api/users/me").hasAnyAuthority(ADMIN, USER)
-                .antMatchers("/api/orders", "/api/orders/**").hasAuthority(ADMIN)
-                .antMatchers("/api/users", "/api/users/**").hasAuthority(ADMIN)
+                .antMatchers(HttpMethod.POST, "/api/v1/**").hasAnyAuthority(ADMIN, USER)
+                .antMatchers(HttpMethod.GET, "/api/v1/**").hasAnyAuthority(ADMIN, USER)
+                .antMatchers(HttpMethod.GET, "/api/**").hasAnyAuthority(ADMIN, USER)
                 .antMatchers("/public/**", "/auth/**").permitAll()
                 .antMatchers("/", "/error", "/csrf", "/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs", "/v3/api-docs/**").permitAll()
                 .anyRequest().authenticated();

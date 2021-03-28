@@ -4,9 +4,9 @@
 
 - ### cake-ui
   
-  In order to access the application, a `user` or `admin` must login using his/her `username` and `password`. 
+  In order to access the application, a `user` must login using his/her `username` and `password`. 
   All the requests coming from `cake-ui` to secured endpoints in `cake-api` have the JWT access token.
-  This token is generated when the `user` or `admin` logins.
+  This token is generated when the `user` logins.
   
   `cake-ui` uses [`Semantic UI React`](https://react.semantic-ui.com/) as CSS-styled framework.
 
@@ -40,7 +40,6 @@
   - Run the following `Maven` command to start the application
     ```
     mvn clean package 
-    docker run -p 8080:8080 -t cake-manager:0.0.1-SNAPSHOT
     ```
 
 - **cake-ui**
@@ -75,7 +74,7 @@
 | Application | URL                                   | Credentials                                         |
 | ----------- | ------------------------------------- | --------------------------------------------------- |
 | cake-api   | http://localhost:8080/swagger-ui.html |                                                     |
-| cake-ui    | http://localhost:3000                 | `admin/admin`, `user/user`  |
+| cake-ui    | http://localhost:3000                 |  `user/user`  |
 
 > **Note:** the credentials shown in the table are the ones already pre-defined. 
 
@@ -85,9 +84,6 @@
 
   ![user-login](images/user-login.gif)
 
-- The gif below shows an `admin` loging in
-
-  ![admin-login](images/admin-login.gif)
 
 ## Testing cake-api Endpoints
 
@@ -95,18 +91,6 @@
   
   - Open a browser and access http://localhost:8080/swagger-ui.html. All endpoints with the lock sign are secured. In order to access them, you need a valid JWT access token.
 
-
-## Util Commands
-
-- **MySQL**
-  ```
-  docker exec -it mysql mysql -uroot -psecret --database=cakeDb
-  show tables;
-  ```
-
-- **jwt.io**
-
-  With [jwt.io](https://jwt.io) you can inform the JWT token and the online tool decodes the token, showing its header and payload.
 
 ## Shutdown
 
